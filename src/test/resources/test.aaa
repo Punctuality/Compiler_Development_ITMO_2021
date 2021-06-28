@@ -1,0 +1,19 @@
+Var a, b, c, d;
+Begin
+a := 1;
+b := 2;
+c := -10;
+d := a;
+d := (a + c) * a / (c - 5);
+
+{
+    THIS IS A BIG TEST
+    of comment block section
+    d := 666;
+}
+
+While (b > ((c - a) * 2)) Do
+Begin
+c := c + 1;
+End
+End
