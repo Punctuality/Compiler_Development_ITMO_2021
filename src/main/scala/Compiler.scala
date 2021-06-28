@@ -90,7 +90,7 @@ class Compiler {
 
     expr.children(1).treeType match {
       case TreeType.UnaryOp =>
-        println(s"mov $tmpName (${expr.children(1).name} $fstValue)");
+        println(s"mov $tmpName (${expr.children(1).name.head} $fstValue)");
       case TreeType.BinaryOp =>
         val sndValue = expr.children(2).treeType match {
           case TreeType.Const | TreeType.Identifier => expr.children(2).name
