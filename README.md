@@ -125,7 +125,7 @@ Result:
 												 12| c <- [Identifier]
 												 12| - <- [BinaryOp]
 												 12| 5 <- [Const]
-							 7| While <- [Custom()]
+							 7| While <- [Keyword]
 								 8| Expression <- [Expression]
 									 9| b <- [Identifier]
 									 9| > <- [BinaryOp]

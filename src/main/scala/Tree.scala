@@ -12,7 +12,7 @@ object Tree {
     case "+" | "-" | "*" | "/" | ">" | "<" | "==" =>
       Tree(name, TreeType.BinaryOp, List.empty)
     case ":=" => Tree(name, TreeType.Assigment, List.empty)
-    case "Var" => Tree(name, TreeType.Keyword, List.empty)
+    case "Var" | "While" => Tree(name, TreeType.Keyword, List.empty)
     case "Expression" => Tree(name, TreeType.Expression, List.empty)
     case "Operators" => Tree(name, TreeType.Enumeration, List.empty)
     case "Root" |
